@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.photo {
+  background-color: black;
+  margin: 0px;
+  height: 60vh;
+  background: url(images/sky.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  height: 65vh;
+  width: 100%;
+}
+
+.contact {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+
+.fab {
+  color: #696969;
+  opacity: 50%;
+  margin-top: 10px;
+  margin-left: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fab:hover {
+  transform: scale(1.2);
+}
+
+.menu {
+  width: 100%;
+  height: 10vh;
+  background-color: goldenrod;
+  border: black 2px solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.menu>a {
+  font-family: 'Indie Flower', cursive;
+  border: 1px black solid;
+  text-decoration: none;
+  color: black;
+  width: inherit;
+  height: 100%;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+a>h1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.menu a:hover {
+  opacity: 0.5;
+  color: yellow;
+}
+
+.about_me {
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  justify-content: space-evenly;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+#me {
+  height: 30vh;
+  border: 10px goldenrod solid;
+}
+
+.itsme {
+  margin-left: initial;
+
+}
+
+p {
+  position: inherit;
+  margin: 0;
+  color: cornsilk;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
+.hobbies {
+  background-color: black;
+  margin: 70px auto 10px auto;
+  color: cornsilk;
+  font-family: 'Indie Flower', cursive;
+  width: 80vw;
+}
+
+.hobbies-text {
+  text-align: justify;
+}
+
+.photos_hobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  margin: 20px auto 20px auto;
+}
+
+.photos_hobby>img {
+  width: 90%;
+  border: goldenrod 5px solid;
+}
+
+@media (min-width: 650px) and (max-width: 1200px) {
+  .itsme {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .itsme {
+    margin-top: 20px;
+  }
+
+  .about_me {
+    flex-flow: wrap;
+  }
+
+  .photos_hobby {
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .about_me {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  #me {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hobbies-text {
+    font-size: 15px;
+  }
+}
